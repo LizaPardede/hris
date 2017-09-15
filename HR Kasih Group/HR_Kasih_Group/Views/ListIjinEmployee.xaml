@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.ListIjinEmployee" Title="Daftar Ijin Karyawan" BackgroundColor="#ffffff">
+        <ListView x:Name="listIjinEmployee" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10,10,10,10">
+                        <Frame>
+                            <Grid RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                 <Label Text="Tanggal" Grid.Row="0" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Jam mulai" Grid.Row="1" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Jam selesai" Grid.Row="2" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Tipe ijin" Grid.Row="3" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Head 1" Grid.Row="4" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Tanggal Approve 1" Grid.Row="5" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Head 2" Grid.Row="6" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Tanggal Approve 2" Grid.Row="7" Grid.Column="0" FontSize="Small"/>
+                                
+                                <Label Text="{Binding Date, StringFormat='{0:dd MMMM yyyy}'}" Grid.Row="0" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Start_Time}" Grid.Row="1" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding End_Time}" Grid.Row="2" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Reason}" Grid.Row="3" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding AppByHead}" Grid.Row="4" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Approve_Head_Date1}" Grid.Row="5" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding AppByHead2}" Grid.Row="6" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Approve_Head_Date2}" Grid.Row="7" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+</ContentPage>

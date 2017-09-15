@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.Login" BackgroundColor="#ffffff">
+    <ContentPage.Content>
+        <StackLayout x:Name="MasterLayout" VerticalOptions="FillAndExpand">
+            
+            <StackLayout x:Name="LogoStack">
+                <Image x:Name="LoginIcon" Source="ic_hr.png" Margin="0,80,0,20"/>
+            </StackLayout>
+
+            <StackLayout x:Name="LoginEntries" VerticalOptions="StartAndExpand">
+                <StackLayout.Padding>
+                    <OnIdiom x:TypeArguments="Thickness">
+                        <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                        <OnIdiom.Tablet>140,150,40,0</OnIdiom.Tablet>
+                    </OnIdiom>
+                </StackLayout.Padding>
+
+                <!--<ActivityIndicator x:Name="ActivitySpinner" Color="Red" IsRunning="True"/>-->
+                <Entry x:Name="Entry_UserName" Placeholder="Username" FontSize="Small"/>
+                <Entry x:Name="Entry_Password" IsPassword="true" Placeholder="Password" FontSize="Small"/>
+                <Button x:Name="Btn_SignIn" Text="Sign In" Clicked="OnClickLoginButton" BackgroundColor="#5eb8ff" TextColor="White" />
+                <Label x:Name="Lbl_Error" TextColor="Red" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

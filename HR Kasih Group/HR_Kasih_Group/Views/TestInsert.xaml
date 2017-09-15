@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.TestInsert">
+
+    <StackLayout Orientation="Vertical" Spacing="0" Padding="0">
+       
+        <Label Text="Date" FontSize="Micro"/>
+        <DatePicker x:Name="entry_date"/>
+        <Label Text="Start" FontSize="Micro"/>
+        <TimePicker x:Name="entry_start"/>
+        <Label Text="End" FontSize="Micro"/>
+        <TimePicker x:Name="entry_end"/>
+        <Label Text="Reason" FontSize="Micro"/>
+        <Picker x:Name="picker_reason"></Picker>
+        <Label Text="Desc" FontSize="Micro"/>
+        <Entry x:Name="entry_desc" Text="{Binding Description}" FontSize="Micro"/>
+        <Label Text="File" FontSize="Micro"/>
+        <Entry x:Name="entry_file" Text="{Binding Ijin_File}" FontSize="Micro"/>
+        <Label Text="User" FontSize="Micro"/>
+        <Entry x:Name="entry_user" Text="{Binding Emp_NIK}" FontSize="Micro"/>
+        <Button x:Name="btnAdd" Text="Add new" Clicked="OnClickAddButton"/>
+    </StackLayout>
+</ContentPage>

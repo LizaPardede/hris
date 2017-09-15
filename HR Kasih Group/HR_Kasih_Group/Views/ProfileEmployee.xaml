@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.ProfileEmployee" Title="Profile" BackgroundColor="#ffffff">
+    <StackLayout>
+        <StackLayout x:Name="LogoStack">
+            <Image x:Name="LoginIcon" Source="user.png" Margin="0,20,0,10"/>
+        </StackLayout>
+
+        <ListView x:Name="listProfile" HasUnevenRows="True" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10,10,10,10">
+                            <Grid RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="Name" Grid.Row="0" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Gender" Grid.Row="1" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Date of hire" Grid.Row="2" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Address domisili" Grid.Row="3" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Birthdate" Grid.Row="4" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Phone number" Grid.Row="5" Grid.Column="0" FontSize="Small"/>
+                                <Label Text="Company Name" Grid.Row="6" Grid.Column="0" FontSize="Small"/>
+
+                                <Label Text="{Binding Emp_Fullname}" Grid.Row="0" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Gender_Name}" Grid.Row="1" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Date_Of_Hire, StringFormat='{0:dd MMMM yyyy}'}" Grid.Row="2" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Emp_Address_Domisili}" Grid.Row="3" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Emp_BirthDate, StringFormat='{0:dd MMMM yyyy}'}" Grid.Row="4" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Emp_HP_Num}" Grid.Row="5" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                                <Label Text="{Binding Company_Name}" Grid.Row="6" Grid.Column="1" FontSize="Small" FontAttributes="Bold" TextColor="#424242"/>
+                            </Grid>
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

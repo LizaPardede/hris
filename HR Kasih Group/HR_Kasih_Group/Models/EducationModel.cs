@@ -1,0 +1,83 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HR_Kasih_Group.Models
+{
+    public class EducationModel
+    {
+        public string EmpEdu_ID;
+        public string Emp_ID;
+        public string Education_ID;
+        public string EmpEdu_SchoolName;
+        public string EmpEdu_SchoolAddress;
+        public string EmpEdu_Sdate;
+        public string EmpEdu_Edate;
+        public string EmpEdu_IP;
+        public string EmpEdu_Certificate;
+        public string Edu_Active;
+        public string Insert_User;
+        public string Insert_Date;
+        public string Update_User;
+        public string Update_Date;
+        public string Education_ID1;
+        public string Education_Name;
+        public string Education_Active;
+        public string Insert_User1;
+        public string Insert_Date1;
+        public string Update_User1;
+        public string Update_Date1;
+        public string Emp_ID1;
+        public string Emp_NIK;
+        public string Password;
+        public string IsResetPassword;
+        public string Gender_ID;
+        public string Religion_ID;
+        public string Company_ID;
+        public string Date_Of_Hire;
+        public string Emp_Fullname;
+        public string Emp_NickName;
+        public string Emp_Address_KTP;
+        public string Emp_Address_Domisili;
+        public string Emp_City;
+        public string Emp_State;
+        public string Emp_Identity_Card;
+        public string Emp_Zip_Code;
+        public string Emp_BirthDate;
+        public string Emp_Marital_Status;
+        public string Emp_Phone_Home;
+        public string Emp_HP_Num;
+        public string Emp_Email;
+        public string Image_Url;
+        public string NPWP_Flag;
+        public string Emp_NPWP_Number;
+        public string Emp_NPWP_Name;
+        public string Emp_NPWP_Addressa;
+        public string Emp_NPWP_File;
+        public string NPWP_Status;
+        public string Status_Schedule_Shift;
+        public string Emp_Active;
+        public string Emp_NonActiveDate;
+        public string Total_Cuti;
+        public string Insert_User2;
+        public string Insert_date2;
+        public string Update_User2;
+        public string Update_Date2;
+        public string Status_Batching;
+        public string Batching_Date;
+        public string Company_ID1;
+        public string Company_Name;
+        public string Company_Address;
+        public string Company_Phone1;
+        public string Company_Phone2;
+        public string Company_Fax;
+        public string Company_Email;
+        public string Company_Active;
+        public string Insert_User3;
+        public string Insert_Date3;
+        public string Update_User3;
+        public string Update_Date3;
+    }
+}

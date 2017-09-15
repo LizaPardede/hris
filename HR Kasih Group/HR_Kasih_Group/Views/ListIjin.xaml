@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.ListIjin" Title="List Ijin" BackgroundColor="#ffffff">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="StartAndExpand">
+                <!--<ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>-->
+                <Label x:Name="lblIjin" Text="Daftar Ijin Karyawan"
+                   FontAttributes="Bold" FontSize="Small" TextColor="#575757"/>
+                <ListView x:Name="listDataIjin" ItemSelected="OnClickIjinItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ViewCell.View>
+                                    <Grid Padding="10,10,10,10" RowSpacing="1" ColumnSpacing="1" x:Name="Grid">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                            <ColumnDefinition Width="*"/>
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label Text="{Binding Emp_Fullname}" Grid.Column="0" FontSize="Micro" FontAttributes="Bold"/>
+                                        <Label Text="{Binding Date, StringFormat='{0:dd MMMM yyyy}'}" Grid.Column="1" FontSize="Micro"/>
+                                        <Label Text="{Binding Reason}" Grid.Column="2" FontSize="Micro"/>
+                                    </Grid>
+                                </ViewCell.View>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HR_Kasih_Group.Views"
+             x:Class="HR_Kasih_Group.Views.FormIjin" Title="Form Ijin" BackgroundColor="#ffffff">
+    <StackLayout Padding="20" Spacing="10" Grid.Row="1" Grid.Column="0">
+        <StackLayout Spacing="5">
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_date_range_black_24dp.png" />
+                <DatePicker x:Name="dpDate"  HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_timer_black_24dp.png" />
+                <TimePicker x:Name="tpStart" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_timer_off_black_24dp.png" />
+                <TimePicker x:Name="tpEnd" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_list_ijin.png" />
+                <Picker x:Name="pickerReason" Title="Jenis ijin" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_list_ijin.png" />
+                <Entry x:Name="entryDescription" Placeholder="Deskripsi" HorizontalOptions="FillAndExpand" FontSize="Small"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
+                <Image Source="ic_list_ijin.png" />
+                <Entry x:Name="entryFile" Placeholder="File" HorizontalOptions="FillAndExpand" FontSize="Small" />
+            </StackLayout>
+
+            <Button Text="Tambah Ijin" Opacity="50" Clicked="OnClickAddButton" BackgroundColor="#5eb8ff" TextColor="#ffffff"/>
+            <Button Text="Daftar ijin" Clicked="OnClickLihatIjin" BackgroundColor="#5eb8ff" TextColor="#ffffff"/>
+
+            
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

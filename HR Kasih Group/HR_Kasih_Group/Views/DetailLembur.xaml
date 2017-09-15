@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HR_Kasih_Group.Views.DetailLembur" Title="Detail Lembur" BackgroundColor="#ffffff">
+       <StackLayout>
+            <ListView x:Name="detailLembur" HasUnevenRows="True" SeparatorVisibility="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="8,8,8,8">
+
+                                <Grid Padding="1,1,1,1" RowSpacing="1" ColumnSpacing="1" VerticalOptions="FillAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Text="NIK" Grid.Row="0" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Nama Lengkap" Grid.Row="1" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Ijin tanggal" Grid.Row="2" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Dari pukul" Grid.Row="3" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Sampai pukul" Grid.Row="4" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Total" Grid.Row="5" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Alasan" Grid.Row="6" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Deskripsi" Grid.Row="7" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Atasan 1" Grid.Row="8" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Status Approval" Grid.Row="9" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Atasan 2" Grid.Row="10" Grid.Column="0" FontSize="Default"/>
+                                    <Label Text="Status Approval 2" Grid.Row="11" Grid.Column="0" FontSize="Default"/>
+
+                                    <Label Text="{Binding Emp_NIK}" Grid.Row="0" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Emp_Fullname}" Grid.Row="1" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Date, StringFormat='{0:dd MMMM yyyy}'}" Grid.Row="2" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Start_Time}" Grid.Row="3" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding End_Time}" Grid.Row="4" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Length}" Grid.Row="5" Grid.Column="1" FontSize="Default" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Reason}" Grid.Row="6" Grid.Column="1" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Description}" Grid.Row="7" Grid.Column="1" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding AppByHead}" Grid.Row="8" Grid.Column="1" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Type_Approve_Head}" Grid.Row="9" Grid.Column="1" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding AppByHead2}" Grid.Row="10" Grid.Column="1" FontSize="Small" FontAttributes="Bold"/>
+                                    <Label Text="{Binding Type_Approve_Head2}" Grid.Row="11" Grid.Column="1" FontSize="Default"/>
+
+                                </Grid>
+                                <Button Text="Approve" Clicked="OnButtonApproveClicked" BackgroundColor="#5eb8ff" TextColor="White"/>
+                                <Button Text="Reject" Clicked="OnButtonRejectClicked" BackgroundColor="#5eb8ff" TextColor="White"/>
+                            </StackLayout>
+
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+</ContentPage>
