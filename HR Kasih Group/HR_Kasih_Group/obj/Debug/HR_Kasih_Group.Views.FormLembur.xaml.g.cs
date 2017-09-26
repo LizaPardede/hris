@@ -11,8 +11,8 @@
 namespace HR_Kasih_Group.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\Views\\Fo" +
-        "rmLembur.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\Views\\FormLembu" +
+        "r.xaml")]
     public partial class FormLembur : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
@@ -31,7 +31,10 @@ namespace HR_Kasih_Group.Views {
         private global::Xamarin.Forms.Entry entryDescription;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
-        private global::Xamarin.Forms.Entry entryFile;
+        private global::Xamarin.Forms.Image FileImage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.Label LocalPathLabel;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
@@ -41,7 +44,8 @@ namespace HR_Kasih_Group.Views {
             tpEnd = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.TimePicker>(this, "tpEnd");
             pickerReason = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "pickerReason");
             entryDescription = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "entryDescription");
-            entryFile = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "entryFile");
+            FileImage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Image>(this, "FileImage");
+            LocalPathLabel = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "LocalPathLabel");
         }
     }
 }

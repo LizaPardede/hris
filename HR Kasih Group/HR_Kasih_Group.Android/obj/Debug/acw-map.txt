@@ -6,6 +6,10 @@ HR_Kasih_Group.Droid.MainApplication, HR_Kasih_Group.Android;md5b506a07a19f0eafd
 HR_Kasih_Group.Droid.MainApplication, HR_Kasih_Group.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5b506a07a19f0eafd1551eb9b891919c8.MainApplication
 HR_Kasih_Group.Droid.MainApplication;md5b506a07a19f0eafd1551eb9b891919c8.MainApplication
 hr_kasih_group.droid.MainApplication;md5b506a07a19f0eafd1551eb9b891919c8.MainApplication
+Plugin.Media.MediaPickerActivity, Plugin.Media;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity, Plugin.Media, Version=3.0.1.0, Culture=neutral, PublicKeyToken=null;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+Plugin.Media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
+plugin.media.MediaPickerActivity;md5f1b52d9f1d5d1981437e7e130649468a.MediaPickerActivity
 Android.Support.V4.Widget.SearchViewCompat/IOnCloseListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat+IOnCloseListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat.IOnCloseListenerImplementor;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor

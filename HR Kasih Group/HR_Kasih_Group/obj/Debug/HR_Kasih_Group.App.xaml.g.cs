@@ -11,8 +11,7 @@
 namespace HR_Kasih_Group {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\App.xaml" +
-        "")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

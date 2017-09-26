@@ -604,9 +604,9 @@ namespace HR_Kasih_Group.Data
             return resultDataIjin;
         }
 
-        public async Task<string> InsertDataLemburJSON(string empNik, DateTime date, string startTime, string endTime, string lemburType, string description, string file, string user, string menuId)
+        public async Task<string> InsertDataLemburJSON(string empNik, DateTime date, string startTime, string endTime, string lemburType, string description, string file,  string fileByte, string user, string menuId)
         {
-            var uri = new Uri(string.Format(Constant.InsertDataLemburJSON + empNik + "&dDate=" + date + "&Start_Time=" + startTime + "&End_Time=" + endTime + "&sLemburType=" + lemburType + "&sDescription=" + description + "&sLembur="+ file + "&sUser=" + user + "&sMenuID=" + menuId, string.Empty));
+            var uri = new Uri(string.Format(Constant.InsertDataLemburJSON + empNik + "&dDate=" + date + "&Start_Time=" + startTime + "&End_Time=" + endTime + "&sLemburType=" + lemburType + "&sDescription=" + description + "&sLemburFile=" + file + "&sLemburByte=" + fileByte + "&sUser=" + user + "&sMenuID=" + menuId, string.Empty));
             Debug.WriteLine(uri);
             try
             {

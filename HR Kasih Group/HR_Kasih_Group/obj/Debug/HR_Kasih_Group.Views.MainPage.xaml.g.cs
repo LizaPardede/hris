@@ -11,8 +11,8 @@
 namespace HR_Kasih_Group {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\Views\\Ma" +
-        "inPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\Views\\MainPage." +
+        "xaml")]
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

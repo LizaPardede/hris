@@ -44,7 +44,7 @@ namespace HR_Kasih_Group.Data
             string description, string reason, string ijinFile, string user, string menuId);
 
         Task<string> InsertDataLemburJSON(string empNik, DateTime date, string startTime, string endTime,
-            string lemburType, string description, string lembur, string user, string menuId);
+            string lemburType, string description, string lembur, string fileByte, string user, string menuId);
 
         //Task<string> SearchDataIjinJSON(string columnName, string value, string user, int row, string companyId);
         //Task<string> SearchDataLemburJSON(string columnName, string value, string user, int row, string companyId);

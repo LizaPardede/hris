@@ -11,8 +11,8 @@
 namespace HR_Kasih_Group.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\Views\\Li" +
-        "stLemburEmployee.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\Views\\ListLembu" +
+        "rEmployee.xaml")]
     public partial class ListLemburEmployee : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

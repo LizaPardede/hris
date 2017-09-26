@@ -18,7 +18,7 @@ namespace HR_Kasih_Group
         {
             hrManager = new HrManager(new RestService());
             if (!IsUserLoggedIn) {
-                MainPage = new NavigationPage(new Login());
+                MainPage = new NavigationPage(new FormLembur("001600064"));
             }
         }
 

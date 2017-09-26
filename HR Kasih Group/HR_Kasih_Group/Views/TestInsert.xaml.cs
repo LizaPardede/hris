@@ -16,7 +16,7 @@ namespace HR_Kasih_Group.Views
 	{
         public string empNik, startTime, endTime, description, reason, user, menuId, date, file, selectedValue;
         public DateTime dates;
-        private TypeIjinModel _SelectedMotherTounge;
+    
 
 
         public TestInsert ()

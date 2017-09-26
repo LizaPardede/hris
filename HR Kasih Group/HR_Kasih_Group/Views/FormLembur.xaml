@@ -32,7 +32,13 @@
 
             <StackLayout Orientation="Horizontal" Padding="0" Spacing="5" HorizontalOptions="FillAndExpand">
                 <Image Source="ic_cloud_upload_black_24dp.png" />
-                <Entry x:Name="entryFile" Placeholder="File" HorizontalOptions="FillAndExpand" FontSize="Small" />
+                <Button Text="Pick Photo" BackgroundColor="Teal" TextColor="White" Clicked="PickPhoto_Clicked"/>
+                <Image x:Name="FileImage" WidthRequest="24" HeightRequest="24"/>
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="LocalPathLabel"
+           TextColor="Black"
+           FontSize="10"/>
             </StackLayout>
 
             <Button Text="Tambah lembur" Clicked="OnClickAddButton" BackgroundColor="#5eb8ff" TextColor="#ffffff"/>

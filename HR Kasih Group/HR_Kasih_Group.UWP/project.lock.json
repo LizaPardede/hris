@@ -22263,16 +22263,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group.UWP\\HR_Kasih_Group.UWP.csproj",
+      "projectUniqueName": "D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group.UWP\\HR_Kasih_Group.UWP.csproj",
       "projectName": "HR_Kasih_Group.UWP",
-      "projectPath": "D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group.UWP\\HR_Kasih_Group.UWP.csproj",
-      "projectJsonPath": "D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group.UWP\\project.json",
+      "projectPath": "D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group.UWP\\HR_Kasih_Group.UWP.csproj",
+      "projectJsonPath": "D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0.10586": {
           "projectReferences": {
-            "D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\HR_Kasih_Group.csproj": {
-              "projectPath": "D:\\Workspace\\Office\\Project\\HR Kasih Group\\HR Kasih Group\\HR_Kasih_Group\\HR_Kasih_Group.csproj"
+            "D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\HR_Kasih_Group.csproj": {
+              "projectPath": "D:\\Workspace\\Office\\Project\\HrisGit\\HR Kasih Group\\HR_Kasih_Group\\HR_Kasih_Group.csproj"
             }
           }
         }

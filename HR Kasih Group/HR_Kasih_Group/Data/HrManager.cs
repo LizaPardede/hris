@@ -159,9 +159,9 @@ namespace HR_Kasih_Group.Data
         }
 
         public Task<string> InsertDataLemburJSON(string empNik, DateTime date, string startTime, string endTime,
-            string lemburType, string description, string lembur, string user, string menuId)
+            string lemburType, string description, string lembur, string fileByte, string user, string menuId)
         {
-            return restService.InsertDataLemburJSON(empNik, date, startTime, endTime, lemburType, description, lembur, user, menuId);
+            return restService.InsertDataLemburJSON(empNik, date, startTime, endTime, lemburType, description, lembur, fileByte, user, menuId);
         }
 
         //public Task<string> SearchDataIjinJSON(string columnName, string value, string user, int row, string companyId)
